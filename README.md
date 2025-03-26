@@ -1,48 +1,84 @@
-**Last Update: 01.11.2022**
+🎬 Video Streaming Demo
+A Netflix-inspired video streaming platform that features a custom video player and supports HLS streaming.
 
-A video streaming demo platform built with Next.js, inspired by Netflix, using a custom video player and providing a streaming example following the HLS protocol.
+🚫 Note: Image optimization is disabled due to Fair Use Policy.
 
+🚀 Features
+✅ Custom Media Player – Built-in player for an immersive viewing experience.
+✅ HLS Streaming – Streams video content following the HLS (HTTP Live Streaming) protocol.
+✅ Middleware & Edge Functions – Handles profile selection efficiently using Edge Functions for lightning-fast redirection.
+✅ TMDb API Integration – Fetches movie details using the TMDb API.
+
+
+🎥 Custom Media Player
+This platform features a fully customized media player built from scratch.
+
+📸 Preview:
 https://streaming-platform-tmdb.vercel.app/
 
-![Preview](public/preview-popup.png)
+📌 Getting Started
+Follow these steps to set up the project on your local machine.
 
-## Frontend
-- React.js
-- Next.js
-- Typescript
-- Styled Components
-- Redux
-- Hls.js
+1️⃣ Clone the Repository
+bash
+Copy
+Edit
+git clone https://github.com/yourusername/repository-name.git
+cd repository-name
+2️⃣ Set Up Environment Variables
+Copy the contents of .env.public into your local .env file and fill in the missing fields.
 
-**Image optimization is disabled due to Fair Use Policy.**
-
-## Known issues
-1. Player isn't properly reset - Solution: Move player store to watch route
-
-## API
-The following api is being utilized: https://developers.themoviedb.org/3/getting-started/introduction
-
-## Next.js
-### Middleware & Edge Functions
-Whether or not a profile has been selected is being checked on the edge at the speed of static to handle a possible redirect.
-
-## Custom Media Player
-The application uses its own custom media player. Because of missing resources audio and subtitle selection are not included.
-
-![Media Player](public/preview-player.png)
-
-## Getting Started
-
-Make sure to copy paste the `.env.public` contents to your local dotenv file and fill in the missing fields.
-
-Then, run the development server:
-
-```bash
+3️⃣ Install Dependencies
+bash
+Copy
+Edit
+npm install
+# or
+yarn install
+4️⃣ Start the Development Server
+bash
+Copy
+Edit
 npm run dev
 # or
 yarn dev
-```
+5️⃣ Open the App
+Once the server is running, open your browser and go to:
+🔗 http://localhost:3000
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+📡 API Integration
+The project uses the TMDb API to fetch movie data.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+Base URL:
+
+arduino
+Copy
+Edit
+https://api.themoviedb.org/3/
+Example Endpoints:
+
+🎬 Get Popular Movies → /movie/popular
+
+🔍 Search for a Movie → /search/movie?query=Inception
+
+📌 Get Movie Details → /movie/{movie_id}
+
+📂 Project Structure
+bash
+Copy
+Edit
+📦 project-root
+ ┣ 📂 public            # Static assets (images, icons, etc.)
+ ┣ 📂 src
+ ┃ ┣ 📂 components      # Reusable components
+ ┃ ┣ 📂 pages           # Application pages
+ ┃ ┣ 📂 utils           # Helper functions
+ ┃ ┣ 📜 styles.css      # Global styles
+ ┣ 📜 .env              # Environment variables
+ ┣ 📜 package.json      # Dependencies & scripts
+ ┣ 📜 README.md         # Project documentation
+📢 Contributing
+We welcome contributions! Feel free to submit a PR with improvements. 🎉
+
+📜 License
+This project is licensed under the MIT License.
