@@ -1,6 +1,6 @@
-# 🎬 Video Streaming Demo Platform  
+# 🎬 Video Streaming Platform  
 
-A video streaming demo platform, inspired by **Netflix**, using a **custom video player** and following the **HLS protocol** for streaming.  
+A video streaming platform, inspired by **Netflix**, using a **custom video player** and following the **HLS protocol** for streaming.  
 
 > **Note:** Image optimization is disabled due to Fair Use Policy.  
 
@@ -8,13 +8,7 @@ A video streaming demo platform, inspired by **Netflix**, using a **custom video
 - ✅ **Custom-built media player**  
 - ✅ **Streaming via the HLS protocol**  
 - ✅ **Edge function-based profile validation**  
-- ✅ **API integration with TMDB**  
-
-## 🔧 Known Issues & Solutions  
-
-### 1️⃣ Player Reset Issue  
-- **Problem:** The player does not reset properly when switching videos.  
-- **Solution:** Move the **player store** to the `watch` route for better state management.  
+- ✅ **API integration with TMDB**    
 
 ## 📡 API Usage  
 This project integrates with **The Movie Database (TMDB) API** to fetch movie data.  
